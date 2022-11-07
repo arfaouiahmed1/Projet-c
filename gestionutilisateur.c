@@ -14,14 +14,7 @@ int ajouter(char * filename, user u )
 }
 
 
-char prenom [20];
-    char nom [20];
-    int cin;
-    date dateNaiss;
-    char id [20];
-    char mdp [20];
-    char bv [20];
-    char role [20];
+
 
 
 
