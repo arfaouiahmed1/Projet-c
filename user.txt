@@ -1,0 +1,8 @@
+feriel bg 14 26 7 2002 id mdp bv1 electeur 1073591440 
+f b 12 26 7 2002 id2 mdp2 bv1 agent 1073591440 
+feriel bg 14 26 7 2002 id mdp bv1 electeur 1073591440 
+f b 12 26 7 2002 id2 mdp2 bv1 agent 1073591440 
+feriel bg 14 26 7 2002 id mdp bv1 electeur 1073591440 
+f b 12 26 7 2002 id2 mdp2 bv1 agent 1073591440 
+feriel bg 14 26 7 2002 id mdp bv1 electeur 0 
+f b 12 26 7 2002 id2 mdp2 bv1 agent 0 
