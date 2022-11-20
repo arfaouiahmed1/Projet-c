@@ -15,7 +15,7 @@ int modifierlaliste( char *, int, Listelectoral );
 int supprimerlaliste(char *, int );
 int voter (char *, int );
 Listelectoral chercher(char *, int);
-int nbv (char * , int *)
+int nbv (char * , int *);
 int L_ordre( char *, Listelectoral , char *);
 
 #endif // LISTELECTORAL_H_INCLUDED
