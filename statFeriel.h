@@ -2,9 +2,10 @@
 #define STATFERIEL_H_INCLUDED
 #include <stdio.h>
 #include <string.h>
-#include <gestionutilisateur.h>
+#include "gestionutilisateur.h"
 
-void TPHF( char * filename, int * f, int *h);
+
+void TPE( char * fichierusers, int * f, int *h);
 float agemoyen(char * fichierusers);
 
 
