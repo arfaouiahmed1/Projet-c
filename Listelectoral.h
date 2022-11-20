@@ -1,23 +1,21 @@
-#ifndef listelectoral_h_INCLUDED
-#define liste_electoral_h_INCLUDED
+#ifndef LISTELECTORAL_H_INCLUDED
+#define LISTELECTORAL_H_INCLUDED
 #include <stdio.h>
-#include <string.h>
-
 typedef struct
 {
-    char nom [20];
-    char prenom [20];
-    int id;
-    char orientation;
-    int tete;
+    int idlist;
+    char nomliste [30];
+    int C[3];
+    char Orientation[20];
+    int nbrvote==0;
 } Listelectoral;
 
-int creationduneliste(char *,Listelectoral);
-int ajoutedecondidat(char *, Listelectoral );
+int ajoutedeliste(char *, Listelectoral );
 int modifierlaliste( char *, int, Listelectoral );
-int supprimerlaliste(char *, int, Listelectoral );
-int voter (char *,
+int supprimerlaliste(char *, int );
+int voter (char *, int );
 Listelectoral chercher(char *, int);
+int nbv (char * , int *)
+int L_ordre( char *, Listelectoral , char *);
 
-#endif // listelectoral_h_INCLUDED
-
+#endif // LISTELECTORAL_H_INCLUDED

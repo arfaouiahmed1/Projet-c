@@ -1,23 +1,24 @@
-#include <stdio.h>
 #include <string.h>
 #include "listelectoral.h"
 
 int main ()
 {
-    listelectoral p1={Arfaoui,Ahmed,111,centre,1},
-    p2= {Arfaoui,Aymen,112,centre,0},
-    p3= {Arfaoui,Amin,113,centre,0};
+    Listelectoral p1={1,"Arfaoui","Ahmed","centre",1,0},
+    p2= {2,"Arfaoui","Aymen","centre",0,0},
+    p3= {3,"Arfaoui","Amin","centre",0,0};
+    
     int x=ajoutedecondidat("Listeselectorales.txt", p1);
-    x=modifierlaliste("Listeselectorales.txt",1,p2 );
+    x=modifierlaliste("Listeselectorales.txt",112,p2 );
     if(x==1)
-        printf("\nModification du liste electoral avec succés");
+        printf("\nModification du liste electoral avec succÃ©s");
     else printf("\nechec Modification");
     x=supprimerlaliste("Listeselectorales.txt",1 );
     if(x==1)
-        printf("\nSuppression du liste electoral avec succés");
+        printf("\nSuppression du liste electoral avec succÃ©s \n");
     else printf("\nechec Suppression");
-    p3=chercher("Listeselectorales.txt",p3 );
+    p3=chercher("Listeselectorales.txt",2 );
     if(p3.id==-1)
-        printf("introuvable");
+        printf("\nintrouvable ");
     return 0;
+    x=voter("Listeselectorales.txt", 3);
 }
