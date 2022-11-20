@@ -12,7 +12,7 @@ float TPE(char * filename)
     if(f!=NULL)
     {
         while(fscanf(f,"%s %s %s %d %d %d %d %s %s %s %s %d \n",
-         &p.prenom ,&p.nom ,&p.genre ,&p.cin ,&p.dateNaiss.j ,&p.dateNaiss.m ,&p.dateNaiss.a ,&p.id ,&p.mdp,&p.bv, &p.role, &p.vote)!=EOF)
+         p.prenom ,p.nom ,&p.genre ,&p.cin ,&p.dateNaiss.j ,&p.dateNaiss.m ,&p.dateNaiss.a ,p.id ,p.mdp,p.bv, p.role, &p.vote)!=EOF)
         {
             ne++;
             if(p.vote!=-1)

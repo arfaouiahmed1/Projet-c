@@ -5,7 +5,7 @@
 #include "gestionutilisateur.h"
 
 
-void TPE( char * fichierusers, int * f, int *h);
+float TPE( char * fichierusers);
 float agemoyen(char * fichierusers);
 
 
