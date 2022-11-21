@@ -5,17 +5,16 @@ typedef struct
 {
     int idlist;
     char nomliste [30];
-    int C[3];
+    int condidat[3];
     char Orientation[20];
-    int nbrvote==0;
-} Listelectoral;
+    int nbrvote;
 
+} Listelectoral;
 int ajoutedeliste(char *, Listelectoral );
 int modifierlaliste( char *, int, Listelectoral );
 int supprimerlaliste(char *, int );
-int voter (char *, int );
+int voter (char *, char *, int , int );
 Listelectoral chercher(char *, int);
 int nbv (char * , int *);
-int L_ordre( char *, Listelectoral , char *);
-
+int L_ordre( char *, Listelectoral );
 #endif // LISTELECTORAL_H_INCLUDED

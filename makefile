@@ -1,6 +1,7 @@
-prog:gestionutilisateur.o mainUtil.o
-	gcc gestionutilisateur.o mainUtil.o -o prog 
-mainUtil.o:mainUtil.c
-	gcc -c mainUtil.c 
-gestionutilisateur.o:gestionutilisateur.c
-	gcc -c gestionutilisateur.c 
+programme:reclamation.o mainy.o
+	gcc reclamation.o mainy.o -o prog
+mainy.o:mainy.c
+	gcc -c reclamation.c
+reclamation.o:reclamation.c
+	gcc -c reclamation.c
+
