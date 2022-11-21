@@ -1,6 +1,7 @@
-prog:gestionutilisateur.o mainUtil.o
-	gcc gestionutilisateur.o mainUtil.o -o prog 
-mainUtil.o:mainUtil.c
-	gcc -c mainUtil.c 
-gestionutilisateur.o:gestionutilisateur.c
-	gcc -c gestionutilisateur.c 
+prog:stat.o mains.o
+	gcc stat.o mains.o -o prog
+mains.o:mains.c
+	gcc -c mains.c
+stat.o:stat.c
+	gcc -c stat.c
+
