@@ -36,9 +36,14 @@ int main()
     float aG = agemoyen("allusers.txt");
     printf("age moy des particip: %f  \n",aG);
 
+    printf("\n tpeee    \n ");
+    float ttt = TPE("allusers.txt");
+    printf("\n result tpeee :%f",ttt);
 
 
-    user c=chercher("allusers.txt",12 );
+
+
+    user c=chercher("allusers.txt",20 );
     if(strcmp(us2.id ,"-1")== 0)
         printf("introuvable");
     else
