@@ -1,3 +1,16 @@
-feriel bg 14 26 7 2002 0 f b 12 26 
-7 2002 14 26 7 2002 0 f b 12 26 
-Ç¤€mdp2 0 14 26 7 2002 0 f b 12 26 
+feriel bg 14 26 7 2002 0 f b 12 26 7 
+2002 14 26 7 2002 0 f b 12 26 26 7 
+Ç¤€mdp2 0 14 26 7 2002 0 f b 12 26 f 
+eriel bg 534201446 14 26 7 Ò 0 f b -706093978 1 
+2 26 7 14 26 7 Ò 0 f b -706093978 Ò 
+ 0 7 14 26 7 Ò 0 f b -706093978 f 
+e bc 102 34 26 7 Ó 0 f b -706093978 f 
+eriel bg 14 26 7 2002 identif mdp bv1 electeur -1 f 
+f b 12 26 7 2002 id2 mdp2 bv1 agent 2 f 
+fe bc 34 26 7 2003 id1 mdp1 bv1 electeur 0 f 
+feriel bg 14 26 7 2002 identif mdp bv1 electeur -1 f 
+f b 12 26 7 2002 id2 mdp2 bv1 agent 2 f 
+fe bc 34 26 7 2003 id1 mdp1 bv1 electeur 0 f 
+feriel bg 14 26 7 2002 identif mdp bv1 electeur -1 f 
+f b 12 26 7 2002 id2 mdp2 bv1 agent 2 f 
+fe bc 34 26 7 2003 id1 mdp1 bv1 electeur 0 f 
