@@ -1,7 +1,7 @@
-programme:stat1.o mainstat1.o
-	gcc stat1.o mainstat1.o -o prog
-mainstat1.o:mainstat1.c
-	gcc -c mainstat1.c
-stat1.o:stat1.c
-	gcc -c stat1.c
+programme:reclamation.o mainy.o
+	gcc reclamation.o mainy.o -o prog
+mainy.o:mainy.c
+	gcc -c reclamation.c
+reclamation.o:reclamation.c
+	gcc -c reclamation.c
 
