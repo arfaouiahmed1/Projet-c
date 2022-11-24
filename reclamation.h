@@ -20,10 +20,10 @@ typedef struct
 int ajouter(char *, reclamation );
 int modifier( char *, int, reclamation );
 int supprimer(char *, int );
-int chercher(char *, int);
+int chercher (char * les_reclamations, int code)
+//int chercher(char *, int);
 int afficher(char * );
 
-/*int nbreclamation(int nb[], char * les_reclamation, char *  listeelectorale)*/
 
 #endif 
 

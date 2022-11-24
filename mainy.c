@@ -47,15 +47,12 @@ int main()
         printf("Réclamation introuvable");
     else printf("\n Recherche avec succes ");
 
+
     x=afficher("les_reclamations.txt");
     if(x==1)
          printf("\n Affichage de reclamation avec succes");
     else printf("\n Echec Affichage");
 
-
-   
-
-                       
 
     return 0;
 }

@@ -25,7 +25,7 @@ int modifier( char *les_reclamations, int code, reclamation reclamation_modifiee
     FILE * f2=fopen("nouv.txt", "w");
     if(f!=NULL && f2!=NULL)
     {
-        while(fscanf(f,"%d %d %d %d %s %s \n",&une_reclamation.id_observateur,&une_reclamation.code_reclamation,&une_reclamation.num_liste_reclamee,&une_reclamation.num_bureau_de_vote,&une_reclamation.type_reclamation,&une_reclamation.texte_reclamation)!=EOF)
+        while(fscanf(f,"%d %d %d %d %s %s \n",&une_reclamation.id_observateur,&une_reclamation.code_reclamation,&une_reclamation.num_liste_reclamee,&une_reclamation.num_bureau_de_vote,une_reclamation.type_reclamation,une_reclamation.texte_reclamation)!=EOF)
         {
             if(une_reclamation.code_reclamation== code)
             {
@@ -53,7 +53,7 @@ int supprimer(char * les_reclamations, int code)
     FILE * f2=fopen("nouv.txt", "w");
     if(f!=NULL && f2!=NULL)
     {
-        while(fscanf(f,"%d %d %d %d %s %s \n",&une_reclamation.id_observateur,&une_reclamation.code_reclamation,&une_reclamation.num_liste_reclamee,&une_reclamation.num_bureau_de_vote,&une_reclamation.type_reclamation,&une_reclamation.texte_reclamation) !=EOF)
+        while(fscanf(f,"%d %d %d %d %s %s \n",&une_reclamation.id_observateur,&une_reclamation.code_reclamation,&une_reclamation.num_liste_reclamee,&une_reclamation.num_bureau_de_vote,une_reclamation.type_reclamation,une_reclamation.texte_reclamation) !=EOF)
         {
             if(une_reclamation.code_reclamation== code)
                 tr=1;
@@ -69,14 +69,14 @@ int supprimer(char * les_reclamations, int code)
 }
 
 
-int chercher(char * les_reclamations, int code)
+int chercher (char * les_reclamations, int code)
 {
     reclamation une_reclamation;
-    int tr=0;
+    int tr;
     FILE * f=fopen(les_reclamations, "r");
     if(f!=NULL)
     {
-        while(tr==0&& fscanf(f,"%d %d %d %d %s %s \n",&une_reclamation.id_observateur,&une_reclamation.code_reclamation,&une_reclamation.num_liste_reclamee,&une_reclamation.num_bureau_de_vote,&une_reclamation.type_reclamation,&une_reclamation.texte_reclamation)!=EOF)
+        while(tr==0&& fscanf(f,"%d %d %d %d %s %s \n",&une_reclamation.id_observateur,&une_reclamation.code_reclamation,&une_reclamation.num_liste_reclamee,&une_reclamation.num_bureau_de_vote,une_reclamation.type_reclamation,une_reclamation.texte_reclamation)!=EOF)
         {
             if(une_reclamation.code_reclamation== code)
                 tr=1;
@@ -87,19 +87,20 @@ int chercher(char * les_reclamations, int code)
 
 
 
-    int afficher(char * les_reclamations)
-    {
+int afficher(char * les_reclamations)
+{
     reclamation une_reclamation;
+    int tr=0;
     FILE * f=fopen(les_reclamations, "r");
     if(f!=NULL)
     {
-        while(fscanf(f,"%d %d %d %d %s %s \n",&une_reclamation.id_observateur,&une_reclamation.code_reclamation,&une_reclamation.num_liste_reclamee,&une_reclamation.num_bureau_de_vote,&une_reclamation.type_reclamation,&une_reclamation.texte_reclamation)!=EOF)
+        while(fscanf(f,"%d %d %d %d %s %s \n",&une_reclamation.id_observateur,&une_reclamation.code_reclamation,&une_reclamation.num_liste_reclamee,&une_reclamation.num_bureau_de_vote,une_reclamation.type_reclamation,une_reclamation.texte_reclamation)!=EOF)
              {
                  fprintf(f,"%d %d %d %d %s %s \n",une_reclamation.id_observateur,une_reclamation.code_reclamation,une_reclamation.num_liste_reclamee,une_reclamation.num_bureau_de_vote,une_reclamation.type_reclamation,une_reclamation.texte_reclamation);
+                 tr=1;
         }             
-     return 1;  
-     } 
-     else return 0;
+     return tr;  
+     
      }
-
+}
 
