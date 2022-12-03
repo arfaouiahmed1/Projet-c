@@ -1,7 +1,7 @@
-programme:stat1.o mainstat1.o
-	gcc stat1.o mainstat1.o -o prog
-mainstat1.o:mainstat1.c
-	gcc -c mainstat1.c
-stat1.o:stat1.c
-	gcc -c stat1.c
+prog:stat.o mains.o
+	gcc stat.o mains.o -o prog
+mains.o:mains.c
+	gcc -c mains.c
+stat.o:stat.c
+	gcc -c stat.c
 
