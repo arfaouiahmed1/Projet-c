@@ -5,8 +5,8 @@
 int main()
 {
     
-    reclamation r1={1,11,111,1111,"type1","aaaaaaaaaaaaaa"},r2={2,22,222,2222,"type2","zzzzzzzzzzzzzzzz"}
-    reclamation une_reclamation,reclamation_modifiee,;
+    reclamation r1={1,11,111,1111,"type1","aaaaaaaaaaaaaa"},r2={2,22,222,2222,"type2","zzzzzzzzzzzzzzzz"};
+    reclamation une_reclamation,reclamation_modifiee;
     int x,code_reclamation;
 
 
@@ -56,4 +56,3 @@ int main()
 
     return 0;
 }
-

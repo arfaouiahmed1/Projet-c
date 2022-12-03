@@ -84,7 +84,7 @@ int chercher (char * les_reclamations, int code)
     }
     fclose(f);
     return tr;
-
+}
 
 
 int afficher(char * les_reclamations)
@@ -103,4 +103,3 @@ int afficher(char * les_reclamations)
      
      }
 }
-

@@ -17,13 +17,12 @@ typedef struct
 } reclamation;
 
 
-int ajouter(char *, reclamation );
-int modifier( char *, int, reclamation );
-int supprimer(char *, int );
-int chercher (char * les_reclamations, int code)
+int ajouter(char *les_reclamations, reclamation une_reclamation );
+int modifier( char *les_reclamations, int code, reclamation reclamation_modifiee );
+int supprimer(char * les_reclamations, int code);
+int chercher (char * les_reclamations, int code);
 //int chercher(char *, int);
-int afficher(char * );
+int afficher(char * les_reclamations);
 
 
-#endif 
-
+#endif

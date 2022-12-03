@@ -1,7 +1,6 @@
-prog:stat.o mains.o
-	gcc stat.o mains.o -o prog
-mains.o:mains.c
-	gcc -c mains.c
-stat.o:stat.c
-	gcc -c stat.c
-
+prog:reclamation.o mainy.o
+	gcc reclamation.o mainy.o -o prog
+mainy.o:mainy.c
+	gcc -c mainy.c
+reclamation.o:reclamation.c
+	gcc -c reclamation.c
