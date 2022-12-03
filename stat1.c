@@ -20,4 +20,5 @@ b++;
 *a=b;
 }
 fclose(Liste);
-return b;}
+return b;
+}
