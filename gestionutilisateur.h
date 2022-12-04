@@ -24,10 +24,10 @@ typedef struct Utilsateur
 
 }user ;
 //le type de  retour int c'est pour indiquer si la tache a été réalisée avec succés ou non// pour afficher des lsg plus tard exemple erreur d'ouverture de fichier, element introuvable
-int ajouter(char *, user );
-int modifier( char *, int, user );
-int supprimer(char *, int );
-user chercher(char *, int);
+int ajouter(char *filename, user u );
+int modifier( char *filename, int id, user nouv );
+int supprimer(char *filename, int id );
+user chercher(char *filename, int id );
 
 #endif // GESTIONUTILISATEUR_H_INCLUDED
  
